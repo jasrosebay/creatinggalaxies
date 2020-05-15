@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  line-height: 1.7;
+  background-color: #e9bbab;
+}
+
+.container {
+  padding: 2.5rem 3rem;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  background-color: #e9bbab;
+  color: #854e4b;
+}
+
+nav h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: bold !important;
+}
+
+nav button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-left: auto;
+  outline: none;
+
+}
+
+nav button,
+nav ul {
+  margin-left: auto;
+}
+
+nav button:hover {
+  opacity: 1;
+}
+
+nav button span {
+  height: 2px;
+  background-color: rgb(68, 68, 68);
+  width: 20px;
+  display: block;
+  margin-top: 4px;
+}
+
+nav button span:first-child {
+  width: 15px;
+}
+
+nav button span:last-child {
+  width: 15px;
+}
+
+nav ul {
+  display: none;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+
+}
+
+nav ul li a {
+  font-size: 12px;
+  color: #222;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+	color: #f9ffab;
+	text-decoration: none;
+	background-color: rgb(72,36,38,0.85);
+	padding: 10px;
+}
+
+.responsive-nav {
+  position: absolute;
+  top: -10%;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(34, 34, 34, 0.075);
+  transition: all 500ms ease-out;
+  z-index: 1;
+  background-color: #e9bbab;
+}
+
+.responsive-nav li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 3rem 0;
+  color: #222;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.responsive-nav li a:hover {
+  font-weight: bold;
+}
+
+.responsive-nav-active {
+  top: 11% !important;
+}
+
+@media (min-width: 1024px) {
+  nav button,
+  .responsive-nav {
+    display: none;
+  }
+  nav ul {
+    display: block;
+  }
+  .container {
+    padding: 2.5rem 10rem;
+  }
+  html {
+    font-size: 72.5%;
+  }
+}

@@ -15,7 +15,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Karla", sans-serif;
-  background-color: #e9bbab;
+  background-color: #000000;
   color: black;
 }
 
@@ -54,18 +54,19 @@ nav {
   display: flex;
   align-items: center;
   z-index: 10;
-  background-color: #e9bbab;
+  background-color: #000000;
   color: #854e4b;
 }
 
 .nav-logo a{
 	text-decoration: none;
-	color: #854e4b;
+  color: white;
+	/*color: #854e4b;*/
 }
 
 .nav-logo a:hover{
 	text-decoration: none;
-	color: #f9ffab;
+	color: #E54ED0;
 }
 
 nav h1 {
@@ -96,7 +97,7 @@ nav button:hover {
 
 nav button span {
   height: 2px;
-  background-color: rgb(68, 68, 68);
+  /*background-color: pink;*/
   width: 20px;
   display: block;
   margin-top: 4px;
@@ -122,7 +123,7 @@ nav ul li {
 
 nav ul li a {
   font-size: 12px;
-  color: #222;
+  color: #f9ffab;
   text-transform: uppercase;
   text-decoration: none;
   margin-left: 2rem;
@@ -131,10 +132,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: #f9ffab;
+  color: #E54ED0;
+	/*color: #f9ffab;*/
 	text-decoration: none;
-	background-color: rgb(72,36,38,0.85);
-	padding: 10px;
+	/*background-color: rgb(72,36,38,0.85);*/
+	/*padding: 10px;*/
 }
 
 .responsive-nav {

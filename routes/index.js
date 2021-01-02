@@ -21,6 +21,10 @@ router.get('/about', function(req, res, next) {
   console.log("about get");
 });
 
+router.get('/services', function(req, res, next) {
+  res.render('services');
+  console.log("services get");
+});
 
 router.get('/portfolio', function(req, res, next) {
   res.render('portfolio');
